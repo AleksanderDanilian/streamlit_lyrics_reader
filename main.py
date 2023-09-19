@@ -4,7 +4,7 @@ import os
 
 def main():
     st.sidebar.title("Lyrics Viewer")
-    uploaded_file = st.sidebar.file_uploader("Upload a text file", type="txt")
+    # uploaded_file = st.sidebar.file_uploader("Upload a text file", type="txt")
     folder_path = 'songs'
     file_names = os.listdir(folder_path)
     selected_file = st.sidebar.selectbox("Select a file", file_names)
